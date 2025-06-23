@@ -1,13 +1,178 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.hero {
+  width: 100%;
+  max-width: 1536px;
+  height: 700px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-image 0.6s ease-in-out;
+}
+
+.comment{
+    width: 100%;
+    height: 150px;
+    border: 1px solid black;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px 60px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.overlay h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 22px;
+}
+
+/* Tugmalar */
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 3;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.nav-button:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.nav-button.left {
+  left: 20px;
+}
+
+.nav-button.right {
+
+  right: 20px;
+}
+
+/* Indicator nuqtalar */
+.dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: white;
+}
+
+/* RESPONSIVE – planshetlar uchun */
+@media (max-width: 1024px) {
+  .hero {
+    height: 550px;
+  }
+
+  .overlay {
+    padding: 30px 40px;
+  }
+
+  .overlay h1 {
+    font-size: 36px;
+  }
+
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .nav-button {
+    font-size: 32px;
+    padding: 8px 12px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* RESPONSIVE – mobil telefonlar uchun */
+@media (max-width: 768px) {
+  .hero {
+    height: 450px;
+  }
+
+  .overlay {
+    padding: 25px 30px;
+  }
+
+  .overlay h1 {
+    font-size: 28px;
+  }
+
+  .overlay p {
+    font-size: 16px;
+  }
+
+  .nav-button {
+    font-size: 28px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 350px;
+  }
+
+  .overlay {
+    padding: 20px;
+  }
+
+  .overlay h1 {
+    font-size: 22px;
+  }
+
+  .overlay p {
+    font-size: 14px;
+  }
+
+  .nav-button {
+    font-size: 24px;
+    padding: 5px 8px;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
 }
