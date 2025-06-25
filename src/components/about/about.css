@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-page {
+    max-width: 1536px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 100px;
+    background-color: #F97316;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.about-cards {
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 20px;
+}
+
+.about-cards-1 {
+    width: 300px;
+    height: 250px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;
+    gap: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    flex-wrap: wrap;
+
+    h1 {
+        font-size: 24px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #111827;
+    }
+
+    p {
+        font-size: 18px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #4B5563;
+    }
+}
+
+
+.about-cards-1:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 1s;
+}
+
+
+.about-info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+}
+
+.about-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+
+    h1 {
+        font-size: 18px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #6366F1;
+    }
+
+    p {
+        font-size: 17px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #4B5563;
+    }
+
+    h2 {
+        font-size: 18px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #6366F1;
+    }
+
+    s {
+        list-style: none;
+    }
+
+}
+
+
+.contact-cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-card-1 {
+    width: 400px;
+    height: 180px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    flex-direction: column;
+    padding: 0 25px;
+    gap: 50px;
+    background-color: white;
+
+    p {
+        font-size: 17px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #4B5563;
+
+    }
+}
+
+
+.contact-card-1:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 1s;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+
+}

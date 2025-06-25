@@ -33,27 +33,28 @@ const Navbar = () => {
         <ul>
           <li><a href="./travel">Ekskursiyalar</a></li>
           <li><a href="#">Shahar</a></li>
-          <li><a href="#">Haqida</a></li>
+          <li><a href="/about">Haqida</a></li>
           <li><a href="#">Aloqaga chiqish</a></li>
         </ul>
       </div>
 
       <div className="nav-contact">
-  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-    <img src={facebook} alt="Facebook" width={24} />
-  </a>
-  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-    <img src={twitter} alt="Twitter" width={24} />
-  </a>
-  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-    <img src={instagram} alt="Instagram" width={24} />
-  </a>
-  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-    <img src={linkedin} alt="LinkedIn" width={24} />
-  </a>
-  <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-    <img src={youtube} alt="YouTube" width={24} />
-  </a>        <select>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <img src={facebook} alt="Facebook" width={24} />
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+          <img src={twitter} alt="Twitter" width={24} />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <img src={instagram} alt="Instagram" width={24} />
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <img src={linkedin} alt="LinkedIn" width={24} />
+        </a>
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+          <img src={youtube} alt="YouTube" width={24} />
+        </a>
+        <select>
           <option value="">Uzbek</option>
           <option value="">Russian</option>
           <option value="">English</option>
