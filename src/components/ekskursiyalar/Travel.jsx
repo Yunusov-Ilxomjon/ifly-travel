@@ -30,7 +30,8 @@ const Travel = () => {
         </div>
       </div>
 
-      <div className="travel-premium">
+<div className="travel">
+        <div className="travel-premium">
         <h1 className="travel-premium-title">Bizning Premium Turlarimizni Kashf Etish</h1>
         <Swiper
           modules={[Navigation, Pagination]}
@@ -74,6 +75,7 @@ const Travel = () => {
           </SwiperSlide>
         </Swiper>
       </div>
+</div>
 
       {isModalOpen && (
         <div className="travel-modal">

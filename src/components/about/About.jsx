@@ -3,7 +3,8 @@ import "./about.css"
 
 const About = () => {
     return (
-        <div className='about-page'>
+<div className="about">
+            <div className='about-page'>
             <h1 style={{
                 textAlign: "center",
                 color: "white",
@@ -81,6 +82,7 @@ const About = () => {
 
             </div>
         </div>
+</div>
     )
 }
 

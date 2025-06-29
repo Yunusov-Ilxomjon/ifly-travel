@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
+.about{
+    width: 100%;
+        background-color: #F97316;
+}
+
 .about-page {
     max-width: 1536px;
-    width: 100%;
+
     height: auto;
     margin: 0 auto;
     padding: 50px 100px;
@@ -150,4 +155,125 @@
     transition: all 1s;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
 
+}
+
+/* =============== RESPONSIVE =============== */
+
+/* Planshet portret: 768px gacha */
+@media (max-width: 768px) {
+
+  .about-page {
+    padding: 40px 50px;
+  }
+
+  .about-cards {
+    gap: 25px;
+  }
+
+  .about-cards-1 {
+    width: 250px;
+    height: auto;
+    padding: 20px 15px;
+  }
+
+  .about-cards-1 h1 {
+    font-size: 20px;
+  }
+
+  .about-cards-1 p {
+    font-size: 16px;
+  }
+
+  .about-info {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about-text h1,
+  .about-text h2 {
+    font-size: 16px;
+  }
+
+  .about-text p {
+    font-size: 15px;
+  }
+
+  .contact-cards {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .contact-card-1 {
+    width: 300px;
+    height: auto;
+    gap: 30px;
+  }
+
+  .contact-card-1 p {
+    font-size: 16px;
+  }
+}
+
+/* Telefon: 480px gacha */
+@media (max-width: 480px) {
+
+  .about-page {
+    padding: 30px 20px;
+  }
+
+  .about-cards {
+    gap: 20px;
+  }
+
+  .about-cards-1 {
+    width: 100%;
+    padding: 15px 10px;
+  }
+
+  .about-cards-1 h1 {
+    font-size: 18px;
+  }
+
+  .about-cards-1 p {
+    font-size: 14px;
+  }
+
+  .about-info {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .about-logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about-text h1,
+  .about-text h2 {
+    font-size: 15px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+  }
+
+  .contact-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-card-1 {
+    width: 100%;
+    height: auto;
+    gap: 20px;
+  }
+
+  .contact-card-1 p {
+    font-size: 15px;
+  }
 }

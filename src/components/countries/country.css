@@ -4,9 +4,12 @@
     box-sizing: border-box;
 }
 
+.country{
+     width: 100%;
+}
+
 .country-container {
     max-width: 1536px;
-    width: 100%;
     height: auto;
     margin: 0 auto;
     /* border: 1px solid black; */
@@ -67,4 +70,65 @@ p{
   height: 30px;
   font-size: 14px;
   border-radius: 5px;
+}
+
+
+/* Planshet portret: 768px gacha */
+@media (max-width: 768px) {
+  .card {
+    width: 350px;
+    height: auto;
+  }
+
+  .card-top {
+    height: 180px; /* yuqoridagi comment bo‘yicha mos */
+  }
+
+  .card-bottom {
+    padding: 15px;
+  }
+
+  .card-bottom h1 {
+    font-size: 20px;
+  }
+
+  .card-bottom p {
+    font-size: 16px;
+  }
+
+  .card-btn {
+    width: 180px;
+    height: 30px;
+    font-size: 14px;
+  }
+}
+
+/* Telefon: 480px gacha */
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-top {
+    height: 150px;
+  }
+
+  .card-bottom {
+    padding: 10px;
+  }
+
+  .card-bottom h1 {
+    font-size: 18px;
+  }
+
+  .card-bottom p {
+    font-size: 14px;
+  }
+
+  .card-btn {
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+  }
 }
