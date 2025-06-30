@@ -24,8 +24,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar">
-      <div className={`nav-container ${scrolled ? 'scrolled' : ''}`}>
+<div className="navbar">
+          <div className={`nav-container ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-logo">
           <img src={logo} alt="Logo" width={60} />
         </div>
@@ -93,7 +93,9 @@ const Navbar = () => {
           </select>
         </div>
       </div>
-    </div>
+
+
+</div>
   );
 };
 
